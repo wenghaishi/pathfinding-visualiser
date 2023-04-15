@@ -9,11 +9,9 @@ body {
 }
 
 .start-node {
-  transition: 0.3s ease-in-out;
+
 }
 
 .start-node:hover {
-  scale: 130%;
   cursor: pointer;
-
 }

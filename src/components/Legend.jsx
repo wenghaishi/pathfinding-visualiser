@@ -4,7 +4,7 @@ import { VscDebugStart, VscTarget } from "react-icons/vsc";
 import Node from "./Node";
 
 const Legend = () => {
-  const handleDragEnd = (event) => {
+  const handleDragEndStartNode = (event) => {
     const targetElement = document.elementFromPoint(
       event.clientX,
       event.clientY
@@ -12,6 +12,19 @@ const Legend = () => {
     if (targetElement.id === 'node') {
       targetElement.style.background = "url('../../public/start.png')";
       targetElement.style.backgroundSize = "20px 20px";
+      targetElement.id = 'start'
+    }
+  };
+
+  const handleDragEndEndNode = (event) => {
+    const targetElement = document.elementFromPoint(
+      event.clientX,
+      event.clientY
+    );
+    if (targetElement.id === 'node') {
+      targetElement.style.background = "url('../../public/end.png')";
+      targetElement.style.backgroundSize = "20px 20px";
+      targetElement.id = 'end'
     }
   };
 
@@ -22,14 +35,20 @@ const Legend = () => {
         <img
           src="start.png"
           alt=""
-          className="h-4 w-4 start-node"
+          className="h-5 w-5 start-node"
           draggable
-          onDragEnd={handleDragEnd}
+          onDragEnd={handleDragEndStartNode}
         />
       </div>
       <div className="flex flex-col items-center">
         <h1>End node</h1>
-        <VscTarget />
+        <img
+          src="end.png"
+          alt=""
+          className="h-5 w-5 start-node"
+          draggable
+          onDragEnd={handleDragEndEndNode}
+        />
       </div>
       <div className="flex flex-col items-center">
         <h1>Unvisited node</h1>
