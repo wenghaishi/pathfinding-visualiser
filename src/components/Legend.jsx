@@ -31,7 +31,7 @@ const Legend = () => {
       <div className="flex flex-col items-center">
         <h1>Start node</h1>
         <img
-          src="src/assets/start.png"
+          src="../../public/static/assets/start.png"
           alt=""
           className="h-5 w-5 start-node"
           draggable
@@ -41,7 +41,7 @@ const Legend = () => {
       <div className="flex flex-col items-center">
         <h1>End node</h1>
         <img
-          src="src/assets/end.png"
+          src="../../public/static/assets/end.png"
           alt=""
           className="h-5 w-5 start-node"
           draggable
