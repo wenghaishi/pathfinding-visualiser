@@ -4,7 +4,7 @@ import Node from "./Node";
 
 const Legend = () => {
   return (
-    <div className="flex flex-row justify-evenly my-6">
+    <div className="flex flex-row justify-evenly my-6 w-3/4">
       <div className="flex flex-col items-center">
         <h1>Start node</h1>
         <VscDebugStart />

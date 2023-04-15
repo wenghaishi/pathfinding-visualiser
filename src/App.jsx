@@ -1,19 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Node from "./components/Node";
 import Nav from "./components/Nav";
 import Legend from "./components/Legend";
+import Main from "./components/Main";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
+    <div className=" flex flex-col items-center">
       <Nav />
       <Legend />
-      <Node />
+      <Main />
     </div>
   );
 }
