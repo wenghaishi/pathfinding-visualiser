@@ -6,11 +6,13 @@ import Main from "./components/Main";
 
 function App() {
   return (
-    <div className=" flex flex-col items-center">
-      <Nav />
+    <>
+    <Nav />
+    <div className="flex flex-col items-center">
       <Legend />
       <Main />
     </div>
+    </>
   );
 }
 
