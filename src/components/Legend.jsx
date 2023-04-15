@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { VscDebugStart, VscTarget } from "react-icons/vsc";
 import Node from "./Node";
+import startImg from '../../public/assets/start.png'
+import endImg from '../../public/assets/end.png'
 
 const Legend = () => {
   const handleDragEndStartNode = (event) => {
@@ -31,7 +33,7 @@ const Legend = () => {
       <div className="flex flex-col items-center">
         <h1>Start node</h1>
         <img
-          src="../../public/static/assets/start.png"
+          src={startImg}
           alt=""
           className="h-5 w-5 start-node"
           draggable
@@ -41,7 +43,7 @@ const Legend = () => {
       <div className="flex flex-col items-center">
         <h1>End node</h1>
         <img
-          src="../../public/static/assets/end.png"
+          src={endImg}
           alt=""
           className="h-5 w-5 start-node"
           draggable
