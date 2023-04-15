@@ -17,11 +17,11 @@ body {
 }
 
 .start {
-  background-image: url("start.png");
+  background-image: url("../public/start.png");
   background-size: 20px 20px;
 }
 
 .end {
-  background-image: url("end.png");
+  background-image: url("../public/end.png");
   background-size: 20px 20px;
 }
