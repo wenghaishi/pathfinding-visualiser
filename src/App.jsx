@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Node from "./components/Node";
 import Nav from "./components/Nav";
+import Legend from "./components/Legend";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
   return (
     <div>
       <Nav />
+      <Legend />
       <Node />
     </div>
   );
