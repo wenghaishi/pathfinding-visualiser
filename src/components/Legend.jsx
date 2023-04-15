@@ -10,8 +10,7 @@ const Legend = () => {
       event.clientY
     );
     if (targetElement.id === 'node') {
-      targetElement.style.background = "url('../../public/start.png')";
-      targetElement.style.backgroundSize = "20px 20px";
+      targetElement.classList.add('start');
       targetElement.id = 'start'
     }
   };
@@ -22,8 +21,7 @@ const Legend = () => {
       event.clientY
     );
     if (targetElement.id === 'node') {
-      targetElement.style.background = "url('../../public/end.png')";
-      targetElement.style.backgroundSize = "20px 20px";
+      targetElement.classList.add('end');
       targetElement.id = 'end'
     }
   };

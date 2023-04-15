@@ -15,3 +15,13 @@ body {
 .start-node:hover {
   cursor: pointer;
 }
+
+.start {
+  background-image: url("start.png");
+  background-size: 20px 20px;
+}
+
+.end {
+  background-image: url("end.png");
+  background-size: 20px 20px;
+}
